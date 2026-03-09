@@ -1,0 +1,9 @@
+Boss Fight: SQL vs NoSQL Decision
+
+For a high-velocity social media feed, NoSQL is the optimal choice due to its strengths in handling massive, unstructured data streams. SQL suits a secure bank ledger best, prioritizing data integrity in financial transactions.
+
+Scenario 1: Social Media Feed
+NoSQL excels here for its horizontal scalability, allowing easy addition of servers via sharding to manage high traffic without performance bottlenecks, unlike SQL's vertical scaling limits. It offers schema flexibility, accommodating varied post formats like text, images, and videos without rigid structures, ideal for rapidly evolving content. NoSQL supports high-velocity writes and reads efficiently, suiting real-time feeds, though it often uses eventual consistency over full ACID.
+
+Scenario 2: Bank Ledger
+SQL provides full ACID compliance—Atomicity, Consistency, Isolation, Durability—ensuring transactions like transfers complete reliably or roll back entirely, critical for financial accuracy. Its fixed schema enforces structured data relationships via joins and foreign keys, perfect for ledger audits and reporting. While SQL scales vertically well for consistent queries, it maintains strong consistency needed in banking over NoSQL's flexibility.
